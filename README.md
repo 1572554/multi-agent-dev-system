@@ -11,6 +11,20 @@
 - RAG Memory：上下文检索
 - LangGraph 工作流编排
 
+## 架构图
+
+```mermaid
+flowchart TD
+
+    A[User]
+    A --> B[Planner Agent]
+    B --> C[RAG Context Retrieval]
+    C --> D[Coder Agent]
+    D --> E[Reviewer Agent]
+    E --> F[Tester Agent]
+
+```
+
 ## 启动
 
 ```bash
